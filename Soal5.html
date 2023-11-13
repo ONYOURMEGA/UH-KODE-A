@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merubah kalimat</title>
+</head>
+<body>
+    <div class="container" id="kalimatContainer" onclick="ubahKalimat()">
+        <p id="kalimat">Saya merasa belum bisa belajar JavaScript</p>
+    </div>
+
+    <script>
+        function ubahKalimat() {
+    var kalimatElement = document.getElementById("kalimat");
+    var containerElement = document.getElementById("kalimatContainer");
+
+    kalimatElement.textContent = "Ternyata saya masih kurang berlatih belajar JavaScript";
+
+    containerElement.style.backgroundColor = "green";
+}
+    </script>
+
+<form action="index.html">
+    <button type="submit">
+        kembali
+    </button>
+</form>
+
+</body>
+</html>

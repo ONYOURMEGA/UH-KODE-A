@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Array Negara</h2>
+        <button onclick="tampilkanNegara()">Tampilkan Negara</button>
+        <p id="hasil"></p>
+    </div>
+
+    <script>
+        // Inisialisasi array negara
+var negara = ['Indonesia', 'Malaysia', 'Singapura', 'Thailand', 'Vietnam', 'Filipina', 'Myanmar', 'Kamboja', 'Brunei', 'Laos'];
+
+function tampilkanNegara() {
+    var hasil = "Negara-negara: " + negara.join(', ');
+
+    // Akses nilai 'Indonesia' dan indeksnya
+    var indeksIndonesia = negara.indexOf('Indonesia');
+
+    if (indeksIndonesia !== -1) {
+        hasil += "<br>Indonesia ada di indeks ke-" + indeksIndonesia;
+    } else {
+        hasil += "<br>Indonesia tidak ditemukan dalam array.";
+    }
+
+    negara.push('Australia');
+
+    document.getElementById("hasil").innerHTML = hasil;
+}
+    </script>
+
+<form action="index.html">
+    <button type="submit">
+        kembali
+    </button>
+</form>
+
+</body>
+</html>

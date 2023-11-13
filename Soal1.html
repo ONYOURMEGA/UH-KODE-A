@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        // soal No.1 Menggabungkan String
+        var word = 'JavaScript';
+        var second = 'Is';
+        var third = 'Awesome';
+        var fourth = 'And';
+        var fifth = 'I';
+        var sixth = 'Love';
+        var seventh = 'It !!!';
+
+        // Menggabungkan string menjadi satu kalimat
+        var sentence = word + ' ' + second + ' ' + third + ' ' + fourth + ' ' + fifth + ' ' + sixth + ' ' + seventh;
+
+        // Menampilkan output ke dalam elemen dengan id "outputText"
+        function showOutput() {
+            document.getElementById('outputText').textContent = sentence;
+        }
+    </script>
+
+    <!-- Tombol untuk menampilkan output -->
+    <button onclick="showOutput()">Tampilkan Kalimat</button>
+
+    <!-- Elemen untuk menampilkan output -->
+    <p id="outputText"></p>
+
+    <form action="index.html">
+        <button type="submit">
+            kembali
+        </button>
+    </form>      
+</body>
+</html>
